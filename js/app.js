@@ -11,7 +11,7 @@ app.directive('singleTea', function() {
 app.config(function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: "./partials/order.html",
+		templateUrl: "./views/selection.html",
 		controller: "Selection"
 	}).when('/checkout', {
 		templateUrl: "./partials/checkout.html",
