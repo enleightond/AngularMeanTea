@@ -19,7 +19,7 @@ app.controller('Selection', function($scope, $location, ApiTeaData, ShoppingCart
 
 app.controller('Checkout', function($scope, ShoppingCart) {
    $scope.shoppingCart = ShoppingCart;
-   $scope.shoppingCart.bag.total = function total(el) {
+   $scope.shoppingCart.bag.total = function(el) {
        (el.tea.price * el.quantity) / 100;
    };
 });
